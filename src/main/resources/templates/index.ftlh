@@ -10,8 +10,13 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
 <body style="background-image: url(${obrazek});">
-<blockquote>
-    ${citat}
-</blockquote>
+
+    <blockquote>
+         ${citat}
+    </blockquote>
+
+
+    <button onClick="window.location.reload()">Další citát</button>
+
 </body>
 </html>
