@@ -49,7 +49,7 @@ private static List<String> readAllLines(String resource)throws IOException{
     public ModelAndView index() throws IOException {
 
         int nahodneCislo = random.nextInt(9) + 1;
-        int nahodneCisloCitat = random.nextInt(16) + 1;
+        int nahodneCisloCitat = random.nextInt(15) + 1;
 
         ModelAndView result = new ModelAndView("index");
 
