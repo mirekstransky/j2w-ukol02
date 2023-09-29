@@ -48,8 +48,8 @@ private static List<String> readAllLines(String resource)throws IOException{
     @GetMapping("/")
     public ModelAndView index() throws IOException {
 
-        int nahodneCislo = random.nextInt(9) + 1;
-        int nahodneCisloCitat = random.nextInt(15) + 1;
+        int nahodneCislo = random.nextInt(10) + 1;
+        int nahodneCisloCitat = random.nextInt(17);
 
         ModelAndView result = new ModelAndView("index");
 
