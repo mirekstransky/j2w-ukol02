@@ -37,11 +37,10 @@ private static List<String> readAllLines(String resource)throws IOException{
         int randomNumber = random.nextInt(randomImage)+1;
         result.addObject("obrazek", String.format("/images/image-%d.jpg", randomNumber));
 
-        List<String> seznam = readAllLines("citaty.txt");
+        List<String> listOfQuote = readAllLines("citaty.txt");
 
-        randomNumber = random.nextInt(seznam.size());
-        System.out.println(seznam.size());
-        result.addObject("citat",seznam.get(randomNumber));
+        randomNumber = random.nextInt(listOfQuote.size());
+        result.addObject("citat",listOfQuote.get(randomNumber));
 
         return result;
     }
