@@ -34,7 +34,7 @@ private static List<String> readAllLines(String resource)throws IOException{
 
         ModelAndView result = new ModelAndView("index");
 
-        int randomNumber = random.nextInt(randomImage + 1);
+        int randomNumber = random.nextInt(randomImage)+1;
         result.addObject("obrazek", String.format("/images/image-%d.jpg", randomNumber));
 
         List<String> seznam = readAllLines("citaty.txt");
